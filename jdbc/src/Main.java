@@ -13,7 +13,7 @@ public class Main {
             ResultSet resultSet = pstatement.executeQuery();
 
             while(resultSet.next()){
-                String id = resultSet.getString("id");
+                int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
                 int age = resultSet.getInt("age");
                 String belong = resultSet.getString("belong");
